@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy · City Radar</title><style>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy · Dear Korea</title><style>
 :root{--fg:#042C53;--muted:#4E6E8F;--bg:#F6FBFF;--card:#fff;--border:#C9DFF6;--accent:#2365CF}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7}
@@ -15,16 +15,16 @@ hr{border:0;border-top:1px solid var(--border);margin:24px 0}
 ul,ol{padding-left:22px}
 .nav{font-size:13px;color:var(--muted);margin-bottom:16px}
 .nav a{margin-right:10px}
-</style></head><body><main><div class="nav"><a href="./index.html">← City Radar</a></div><h1>City Radar Privacy Policy</h1>
-<p><strong>Effective date:</strong> August 24, 2026</p>
-<p>Locale ("we", "the operator") operates the City Radar mobile application ("the Service"). This policy explains what we collect, why, and what you can do about it. We follow the Republic of Korea's Personal Information Protection Act (PIPA) and related laws.</p>
+</style></head><body><main><div class="nav"><a href="./index.html">← Dear Korea</a></div><h1>Dear Korea Privacy Policy</h1>
+<p><strong>Effective date:</strong> November 5, 2026</p>
+<p>Locale ("we", "the operator") operates the Dear Korea mobile application ("the Service"). This policy explains what we collect, why, and what you can do about it. We follow the Republic of Korea's Personal Information Protection Act (PIPA) and related laws.</p>
 <h2>Summary</h2>
 <ul>
 <li><strong>There is no sign-up.</strong> We do not collect your name, email, phone number, or date of birth.</li>
 <li>You are identified only by a <strong>random anonymous ID</strong> created on your device.</li>
 <li><strong>Your location never leaves your phone.</strong> We do not send, store, or share your coordinates.</li>
 <li><strong>We use no advertising, analytics, or tracking tools.</strong> We do not track you across apps or websites.</li>
-<li>The only things stored on our server are your saved items, the notes you write, and the reports you submit.</li>
+<li>The only things stored on our server are your saved items, your trip plans, the notes you write, the reports you submit, the feedback you send, and error reports when the app crashes (kept for 60 days).</li>
 </ul>
 <h2>1. What we collect and how</h2>
 <p>We have no account registration and never ask for your name, email, phone number, address, date of birth, or gender.</p>
@@ -32,19 +32,22 @@ ul,ol{padding-left:22px}
 <table><thead><tr><th>Item</th><th>Description</th></tr></thead><tbody>
 <tr><td>Anonymous ID</td><td>A random value issued by our login service (Supabase) the first time you open the app. It is not linked to any information that identifies you personally.</td></tr>
 <tr><td>Usage records, access logs, IP address</td><td>May be generated and recorded automatically while operating and securing the server.</td></tr>
+<tr><td>Error reports (crash reports)</td><td>When the app hits an error: the error text (with link parameters, login tokens, key values, and coordinates removed), the type of screen, the app version, the device type (iOS/Android/web), the app language, and a random number made for this install. Not linked to your anonymous ID; no location, search words, or text you typed. Deleted automatically after 60 days.</td></tr>
 </tbody></table>
 <p><strong>(2) Stored because you entered it</strong></p>
 <table><thead><tr><th>Feature</th><th>What is stored on the server</th></tr></thead><tbody>
 <tr><td>Save (heart)</td><td>Anonymous ID + the ID of the saved item</td></tr>
 <tr><td>Visitor notes (comments)</td><td>Anonymous ID + event ID + the text you wrote + note type</td></tr>
 <tr><td>Pop-up submission</td><td>Anonymous ID + title, place name, region, district, dates, official URL, memo</td></tr>
+<tr><td>Feedback (Send feedback, Report a wrong place)</td><td>Anonymous ID + the message you wrote + feedback type + the reported place's ID (wrong-place reports only) + app version + app language. Only the operator can read it; it is never shown in the app. The anonymous ID is kept to limit repeated sending.</td></tr>
+<tr><td>Trip plans (including shared plans)</td><td>The anonymous IDs and roles of the owner and members + city, trip dates, day start and end times, the places and events added with their times, and an edit history. Invite and share links are stored only as a hash, never the link itself. Because accounts are anonymous, a plan cannot be recovered after the phone is lost or the app is deleted.</td></tr>
 <tr><td>Crowd report</td><td>Anonymous ID + event ID + report type + crowd level (the anonymous ID is kept to prevent spam and repeated fake reports)</td></tr>
 <tr><td>Report</td><td>Anonymous ID + the reported note's ID + the reason</td></tr>
 <tr><td>Block an author</td><td>Your anonymous ID + the blocked author's anonymous ID</td></tr>
 </tbody></table>
-<p>Please <strong>do not type information that identifies you</strong> into free-text fields (notes, submissions). What you write there may be shown publicly in the app.</p>
+<p>Please <strong>do not type information that identifies you</strong> into free-text fields (notes, submissions, feedback). Notes and submissions may be shown publicly in the app; feedback is never shown.</p>
 <p><strong>(3) Stored only on your device (never sent to us)</strong></p>
-<p>Login session token, saved-item cache, the list of notes you hid by reporting or blocking, your selected city, an offline copy of your saved items, language and quiet-mode settings, recent searches, and onboarding progress. These are deleted when you delete the app.</p>
+<p>Login session token, saved-item cache, the list of notes you hid by reporting or blocking, your selected city, an offline copy of your saved items, offline copies of your recent and upcoming trip plans (with the names of their stops), changes you make to a plan while offline (until they are sent), places you stamped "Visited", language and quiet-mode settings, Saved-tab and planner settings, recent searches, recently viewed items, event reminders you turn on (scheduled on the phone only), an error report waiting to be sent, and onboarding progress. These are deleted when you delete the app.</p>
 <h2>2. Location</h2>
 <p>If you grant location permission on your device, the Service uses your current position to: ① sort nearby places and events, and ② show your position on the map.</p>
 <ul>
@@ -57,13 +60,15 @@ ul,ol{padding-left:22px}
 <p>We use the information only to:</p>
 <ol>
 <li>keep your saved list and restore it for you,</li>
-<li>publish and review the notes and reports you submit, and</li>
+<li>publish and review the notes and reports you submit, read the feedback you send to fix wrong details and improve the app, and save, co-edit and share your trip plans, and</li>
 <li>prevent abuse and spam, and operate the service reliably.</li>
 </ol>
 <p>If the purpose ever changes, we will tell you beforehand and ask for your consent.</p>
 <h2>4. How long we keep it, and deletion</h2>
 <ul>
 <li>Saved items, notes, and reports are kept <strong>until you delete them or ask us to erase them</strong>.</li>
+<li>Feedback messages are kept <strong>until you ask us to erase them</strong> (section 7).</li>
+<li>Error reports are deleted automatically <strong>60 days</strong> after they are recorded.</li>
 <li>When you delete a note it stops being visible immediately (it is marked "deleted"). Full erasure happens when you ask us under section 7; until then it is kept hidden for abuse prevention.</li>
 <li>Deleting the app removes everything stored on your device at once. Data already on the server may remain attached to your anonymous ID, so if you want it fully erased please use section 7 below.</li>
 <li>Erasure method: electronic files are permanently deleted so that they cannot be recovered.</li>
