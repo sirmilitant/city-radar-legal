@@ -8,8 +8,8 @@
 (function () {
   'use strict';
 
-  // Public site key of the "Dear Korea app" Turnstile widget (Invisible). Empty until the owner creates it.
-  var SITE_KEY = '';
+  // Public site key of the "Dear Korea app" Turnstile widget (Invisible, hostname sirmilitant.github.io).
+  var SITE_KEY = '0x4AAAAAAF1j6xb6fpeSqZ_R';
   var TEST_KEYS = {
     '1x00000000000000000000BB': true, // invisible, always passes
     '2x00000000000000000000BB': true, // invisible, always fails
