@@ -16,7 +16,8 @@ ul,ol{padding-left:22px}
 .nav{font-size:13px;color:var(--muted);margin-bottom:16px}
 .nav a{margin-right:10px}
 </style></head><body><main><div class="nav"><a href="./index.html">← Dear Korea</a></div><h1>Dear Korea Privacy Policy</h1>
-<p><strong>Effective date:</strong> November 5, 2026</p>
+<p><strong>Effective date:</strong> November 15, 2026</p>
+<p><strong>What changed from the November 5, 2026 version:</strong> we added the bot check (Cloudflare Turnstile, USA) in sections 6 and 9, and GitHub, which serves the check page, in section 6. Reason: to keep scripts from making fake accounts.</p>
 <p>Locale ("we", "the operator") operates the Dear Korea mobile application ("the Service"). This policy explains what we collect, why, and what you can do about it. We follow the Republic of Korea's Personal Information Protection Act (PIPA) and related laws.</p>
 <h2>Summary</h2>
 <ul>
@@ -24,6 +25,7 @@ ul,ol{padding-left:22px}
 <li>You are identified only by a <strong>random anonymous ID</strong> created on your device.</li>
 <li><strong>Your location never leaves your phone.</strong> We do not send, store, or share your coordinates.</li>
 <li><strong>We use no advertising, analytics, or tracking tools.</strong> We do not track you across apps or websites.</li>
+<li>The first time the app makes your anonymous ID, a <strong>bot check</strong> (Cloudflare Turnstile) runs in the background, so scripts cannot make fake accounts. It runs in the USA (see sections 6 and 9).</li>
 <li>The only things stored on our server are your saved items, your trip plans, the notes you write, the reports you submit, the feedback you send, and error reports when the app crashes (kept for 60 days).</li>
 </ul>
 <h2>1. What we collect and how</h2>
@@ -79,7 +81,19 @@ ul,ol{padding-left:22px}
 <p><strong>Processor</strong></p>
 <table><thead><tr><th>Company</th><th>Task</th></tr></thead><tbody>
 <tr><td>Supabase Inc.</td><td>Database hosting, anonymous authentication</td></tr>
+<tr><td>Cloudflare, Inc.</td><td>Bot check (Turnstile) when the app first makes your anonymous ID</td></tr>
 </tbody></table>
+<p><strong>Bot check and overseas transfer</strong></p>
+<p>To keep scripts from making fake accounts, the first time the app makes your anonymous ID it runs a check from Cloudflare in the background. You do not need to tap anything. We receive only a pass or fail result; we do not receive or keep the data below.</p>
+<table><thead><tr><th>Item</th><th>Details</th></tr></thead><tbody>
+<tr><td>Recipient</td><td>Cloudflare, Inc. (contact: privacyquestions@cloudflare.com)</td></tr>
+<tr><td>Country</td><td>United States of America</td></tr>
+<tr><td>Data</td><td>IP address, connection (TLS) fingerprint, browser identifier (User-Agent), and our check key and page address</td></tr>
+<tr><td>When and how</td><td>Once, when the app first makes your anonymous ID, sent over an encrypted connection (HTTPS)</td></tr>
+<tr><td>Purpose</td><td>Telling people from automated scripts, to prevent fake accounts and spam (Cloudflare also uses it to improve its bot detection; not for ads or profiling)</td></tr>
+<tr><td>Retention</td><td>As set out in Cloudflare's privacy policy and its Turnstile Privacy Addendum (https://www.cloudflare.com/turnstile-privacy-policy/)</td></tr>
+</tbody></table>
+<p>The check runs automatically. If it does not pass, the app keeps working on your phone only and tries again later. If you do not want the check, contact us (section 11) before you first use the app.</p>
 <p><strong>External services contacted while you use the app</strong></p>
 <p>Displaying maps and images causes your device to connect to the services below. Because of how internet connections work, your <strong>IP address</strong> may be visible to them. We do not send them any other information about you.</p>
 <ul>
@@ -87,6 +101,7 @@ ul,ol{padding-left:22px}
 <li>Naver Maps (depending on the map mode in use)</li>
 <li>Google (place photos), Naver (image thumbnails)</li>
 <li>The original websites hosting content images (public bodies such as the Korea Tourism Organization, and official sites of individual venues)</li>
+<li>GitHub (it serves the small bot check page, from the USA)</li>
 </ul>
 <p>Once you tap "directions" or "official site" and leave for another app or website, that service's own privacy policy applies.</p>
 <h2>7. Your rights</h2>
@@ -99,7 +114,7 @@ ul,ol{padding-left:22px}
 <h2>8. Children under 14</h2>
 <p>The Service is not directed to children under the age of 14, and we do not knowingly collect their personal information. If we learn that we have, we erase it without delay.</p>
 <h2>9. Where data is stored</h2>
-<p>Service data is stored on servers operated by Supabase Inc. in the <strong>Seoul (ap-northeast-2) region in the Republic of Korea</strong>, and is not transferred overseas. (Supabase Inc.'s role as a processor is described in section 6.)</p>
+<p>Service data is stored on servers operated by Supabase Inc. in the <strong>Seoul (ap-northeast-2) region in the Republic of Korea</strong>. The only data that goes overseas is the bot check data in section 6 (Cloudflare, USA). (Supabase Inc.'s role as a processor is described in section 6.)</p>
 <h2>10. How we protect your information</h2>
 <ul>
 <li>All traffic is encrypted in transit (HTTPS).</li>
